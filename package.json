@@ -1,0 +1,21 @@
+{
+  "name": "micro-frontend",
+  "packageManager": "yarn@3.5.0",
+  "author": "GabrielLacerda",
+  "scripts": {
+    "app1": "cd apps/barchart && webpack serve",
+    "app2": "cd apps/linechart && webpack serve",
+    "container": "cd apps/container && webpack serve"
+  },
+  "workspaces": [
+    "./apps/*"
+  ],
+  "dependencies": {
+    "echarts": "^5.4.2",
+    "html-webpack-plugin": "^5.5.0",
+    "supervisor": "^0.12.0",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
+  }
+}
